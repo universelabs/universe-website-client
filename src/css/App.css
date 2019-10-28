@@ -1,0 +1,128 @@
+/* App.css */
+
+/* Table of contents
+/* -------------------------------
+/* Color system                   /* Pagination                           */
+/* Options                        /* Jumbotron                            */
+/* Spacing                        /* Cards                                */
+/* Body                           /* Tooltips                             */
+/* Links                          /* Popovers                             */
+/* Paragraphs                     /* Toasts                               */
+/* Grid breakpoints               /* Badges                               */
+/* Grid containers                /* Modals                               */
+/* Grid columns                   /* Alerts                               */
+/* Components                     /* Progress bars                        */
+/* Typography                     /* List group                           */
+/* Tables                         /* Image thumbnails                     */
+/* Buttons + Forms                /* Figures                              */
+/* Buttons                        /* Breadcrumbs                          */
+/* Forms                          /* Carousel                             */
+/* Form validation                /* Spinners                             */
+/* Z-index master list            /* Close                                */
+/* Navs                           /* Code                                 */
+/* Navbar                         /* Utilities                            */
+/* Dropdowns                      /* Printing                             */
+
+
+a.text-light:hover, a.text-light:focus {
+  color: #000!important;
+  background-color: #e0e0e0!important;
+}
+
+html {
+  text-rendering: optimizeLegibility;
+}
+
+.App {
+  height: 100%;
+}
+
+ul {
+  margin-top: 1rem;
+}
+
+dd, dt {
+  line-height: 1.5;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: 1.5rem;
+}
+
+.quote {
+  font-size: 2.05rem;
+}
+
+.text-footer {
+  font-size: 80%;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .quote {
+    font-size: 3rem; /* Reset back to default */
+  }
+
+  .btn-open-source {
+    font-size: 12px;
+    padding-top: 8px;
+    padding-right: 32px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+  }
+  
+  /* Heart */
+  .btn-open-source > span {
+    font-size: 17px;
+    position: absolute;
+    margin-top: -17px;
+    margin-left: 52px;
+  }
+}
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+  .container {
+    max-width: none;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* Extra Extra small devices devices */
+@media (max-width:348px) {}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {}
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {}
+
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {}
+
+/* Extra large devices (large desktops)*/
+/* No media query since the extra-large breakpoint has no upper bound on its width */

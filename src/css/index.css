@@ -1,0 +1,28 @@
+/* #1d00f7;   indigo-500    -------- */
+ ::selection{background:rgba(29,0,247,0.99);color:#fff;}
+ ::-moz-selection{background:rgba(29,0,247,0.99);color:#fff;}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Helvetica Neue", Arial, "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji","Segoe UI Symbol";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#root {
+  height: 100%;
+}
