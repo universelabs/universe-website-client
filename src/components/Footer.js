@@ -1,17 +1,21 @@
-import React from 'react';
-import CopyrightUpdate from 'copyright-update';
-import FooterColLeft from './FooterColLeft';
-import FooterColCenter from './FooterColCenter';
-import FooterColRight from './FooterColRight';
-import logoWordmark from './../img/universe-wordmark-white.svg';
-import '../css/Footer.css';
+import React from "react";
+import CopyrightUpdate from "copyright-update";
+import FooterColLeft from "./FooterColLeft";
+import FooterColCenter from "./FooterColCenter";
+import FooterColRight from "./FooterColRight";
+import Social from "./Social";
+import logoWordmark from "./../img/universe-wordmark-white.svg";
+import socialItems from "../data/socialItems.json";
+import "../css/Footer.css";
 
-function Footer( className ) {
+function Footer(className) {
+  const greeting = "Hello Function Component!";
+
   return (
     <footer
       className={`container-fluid ${className}`}
-      style={{ backgroundColor: '#000' }}
-      >
+      style={{ backgroundColor: "#000" }}
+    >
       <div className="container pt-6 pb-6">
         <div className="mb-4b">
           <a href="/">
@@ -20,7 +24,7 @@ function Footer( className ) {
               className="navbar-brand-img"
               alt="Universe Logo"
               style={{
-                marginLeft: '-3px'
+                marginLeft: "-3px"
               }}
             />
           </a>
@@ -52,23 +56,29 @@ function Footer( className ) {
             <ul
               className="inline-list"
               style={{
-                paddingRight: '2px',
-                paddingLeft: '8px'
-              }}>
+                paddingRight: "2px",
+                paddingLeft: "8px"
+              }}
+            >
+              <Social
+                socialItems={socialItems}
+                listAlign="list-inline-item"
+                className="text-white"
+              />
             </ul>
-            <div 
+            <div
               className="
                 subscribe 
                 ml-auto 
                 pl-3 
                 pr-3"
-              >
-              <p 
+            >
+              <p
                 className="
                   text-white 
                   small-font-size-90 
                   mt-4"
-                >
+              >
                 Subscribe to our mailing list.
               </p>
               <a
@@ -80,26 +90,27 @@ function Footer( className ) {
                   mb-4"
                 href="/subscribe"
                 role="button"
-                >
+              >
                 Subscribe
               </a>
             </div>
           </div>
         </div>
         <div className="container line w-100 bg-white mb-4c" />
-        <div 
+        <div
           className="
             small 
             font-weight-heavy
             text-white-50 
             letter-space 
             mb-2"
-          >
+        >
           <CopyrightUpdate
             style={{
-              display: 'inline-block'
-            }}/>
-            &nbsp;Universe Labs Inc.
+              display: "inline-block"
+            }}
+          />
+          &nbsp;Universe Labs Inc.
         </div>
       </div>
     </footer>

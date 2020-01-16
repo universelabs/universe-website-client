@@ -1,25 +1,22 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from "react";
+import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ListItem = styled.li`
   line-height: 25px;
 `;
 
-class Social extends Component {
-  render() {
-    return this.props.socialItems.map(item => (
-      <ListItem key={item.id} className={`${this.props.listAlign} mx-2`}>
-        <a
-          href={item.href}
-          alt={item.alt}
-          className={`${this.props.className}`}
-          >
-          <FontAwesomeIcon className="mr-1" icon={[`fab`, `${item.icon}`]} />
+function Social(listAlign, className, items) {
+  return (
+    items &&
+    items.map((item, i) => (
+      <ListItem key={i} className={`${listAlign} mx-2`}>
+        <a href={items.href} alt={items.alt} className={`${className}`}>
+          <FontAwesomeIcon className="mr-1" icon={[`fab`, `${items.icon}`]} />
         </a>
       </ListItem>
-    ));
-  }
+    ))
+  );
 }
 
 export default Social;

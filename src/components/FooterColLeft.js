@@ -1,7 +1,7 @@
-import React from 'react';
-import footerDataLeft from '../data/footerDataLeft.json';
+import React from "react";
+import footerDataLeft from "../data/footerDataLeft.json";
 
-function FooterColLeft( className ) {
+function FooterColLeft(className) {
   return footerDataLeft.map(item => (
     <li key={item.id} className="text-white-20 mb-2">
       {/* <a 
