@@ -26,7 +26,7 @@
     "@fortawesome/free-brands-svg-icons": "5.12.0",
     "@fortawesome/free-solid-svg-icons": "5.12.0",
     "@fortawesome/react-fontawesome": "0.1.8",
-    "@universelabs/meta": "1.10.0",
+    "@universelabs/meta": "1.11.0",
     "bootstrap": "4.4.1",
     "copyright-update": "1.7.3",
     "jquery": "3.4.1",
